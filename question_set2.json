@@ -1,0 +1,82 @@
+[
+    {
+        "question": "What modulation techniques are used in the physical layer of LTE?",
+        "answer": "QPSK, 16QAM, 64QAM, and 256QAM are used for downlink; pi/2 BPSK, QPSK, 16QAM, and 64QAM are used for uplink."
+    },
+    {
+        "question": "Why is cell search necessary in LTE?",
+        "answer": "It is required for the User Equipment (UE) to achieve frequency and time synchronization before connecting to a cell."
+    },
+    {
+        "question": "What is the difference between FDD and TDD modes?",
+        "answer": "FDD uses separate frequency bands for downlink and uplink, while TDD uses the same frequency band with time-division access."
+    },
+    {
+        "question": "What is the advantage of narrowband operation in LTE?",
+        "answer": "It provides lower power consumption and wider coverage for devices like NB-IoT."
+    },
+    {
+        "question": "What is the purpose of Turbo Coding in LTE?",
+        "answer": "It enhances error correction capability in data transmission."
+    },
+    {
+        "question": "How does MIMO provide an advantage in LTE?",
+        "answer": "It increases data rates and spectral efficiency through multiple input and output antenna structures."
+    },
+    {
+        "question": "Which uplink physical channels are used in LTE?",
+        "answer": "PRACH, PUSCH, PUCCH, and NPUSCH are used."
+    },
+    {
+        "question": "How does beamforming work in external antenna arrays?",
+        "answer": "It improves signal quality and reduces interference by focusing energy in a specific direction."
+    },
+    {
+        "question": "What is Hybrid ARQ (HARQ) in LTE?",
+        "answer": "It is an error correction mechanism that uses incremental redundancy and retransmission."
+    },
+    {
+        "question": "What is the purpose of Multicast/Broadcast Single Frequency Network (MBSFN)?",
+        "answer": "It enables efficient MBMS by synchronizing transmissions across multiple cells."
+    },
+    {
+        "question": "What is the purpose of physical measurement reporting in LTE?",
+        "answer": "It monitors and optimizes network performance for tasks like handover, positioning, and radio resource management."
+    },
+    {
+        "question": "How is narrowband operation defined in LTE?",
+        "answer": "It operates in a maximum of 6 resource blocks, optimized for low-data-rate IoT applications."
+    },
+    {
+        "question": "What error control mechanism is used during channel coding in LTE?",
+        "answer": "A 24-bit Cyclic Redundancy Check (CRC) mechanism."
+    },
+    {
+        "question": "What is the role of OFDM in LTE?",
+        "answer": "It improves spectral efficiency in downlink transmissions using multi-carrier waves."
+    },
+    {
+        "question": "Why is SC-FDMA preferred for uplink in LTE?",
+        "answer": "It provides a lower Peak-to-Average Power Ratio (PAPR)."
+    },
+    {
+        "question": "What is the function of Proximity Services (ProSe) in LTE?",
+        "answer": "It enables direct device-to-device communication for applications."
+    },
+    {
+        "question": "What problem does Coordinated Multi-Point (CoMP) solve in LTE?",
+        "answer": "It reduces signal interference at the cell edges, improving performance."
+    },
+    {
+        "question": "Why are LTE physical channels divided into uplink and downlink?",
+        "answer": "To optimize data transmission for asymmetric traffic demands."
+    },
+    {
+        "question": "What is the purpose of uplink synchronization in LTE?",
+        "answer": "To align transmissions from User Equipment with the network's timing."
+    },
+    {
+        "question": "Which signals provide frequency and time synchronization in LTE?",
+        "answer": "Primary Synchronization Signals (PSS) and Secondary Synchronization Signals (SSS)."
+    }
+]

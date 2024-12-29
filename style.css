@@ -1,0 +1,8 @@
+thead th {
+  background-color: lightgreen !important;
+  color: rgb(1, 84, 1) !important;
+}
+
+tbody td, th {
+  vertical-align: top !important;
+}

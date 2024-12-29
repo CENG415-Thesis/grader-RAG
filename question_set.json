@@ -1,0 +1,14 @@
+[
+    {
+        "question": "What modulation techniques are used in the physical layer of LTE?",
+        "answer": "QPSK, 16QAM, 64QAM, and 256QAM are used for downlink; pi/2 BPSK, QPSK, 16QAM, and 64QAM are used for uplink."
+    },
+    {
+        "question": "Why is cell search necessary in LTE?",
+        "answer": "It is required for the User Equipment (UE) to achieve frequency and time synchronization before connecting to a cell."
+    },
+    {
+        "question": "What is the difference between FDD and TDD modes?",
+        "answer": "FDD uses separate frequency bands for downlink and uplink, while TDD uses the same frequency band with time-division access."
+    }
+]
