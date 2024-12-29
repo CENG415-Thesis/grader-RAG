@@ -8,7 +8,7 @@ The output of the query is returned to the same model to be evaluated according 
 - Groundedness
 - Answer Relevance
 - Context Relevance
-- 
+
 Then you can see all the results in different tables on a streamlit page.
 
 ## How can I run it?
