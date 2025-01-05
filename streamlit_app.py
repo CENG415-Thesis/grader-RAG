@@ -19,6 +19,28 @@ class StreamlitApp:
         local_css("style.css")
         st.title("Processed Questions")
         data = self.load_data()
+        
+        # Extract grading scores from grading_result
+        for item in data:
+            grading_result = item['grading_result']
+            lines = grading_result.split('\n')
+            for line in lines:
+                if "Groundedness:" in line:
+                    try:
+                        item['Groundedness'] = float(line.split(":")[1].strip().replace('*', ''))
+                    except ValueError:
+                        item['Groundedness'] = None
+                elif "Answer Relevance:" in line:
+                    try:
+                        item['Answer Relevance'] = float(line.split(":")[1].strip().replace('*', ''))
+                    except ValueError:
+                        item['Answer Relevance'] = None
+                elif "Context Relevance:" in line:
+                    try:
+                        item['Context Relevance'] = float(line.split(":")[1].strip().replace('*', ''))
+                    except ValueError:
+                        item['Context Relevance'] = None
+
         df = pd.DataFrame(data)
 
         page = st.sidebar.selectbox("Select Page", ["Markdown View", "Table View", "Dataframe View"])
@@ -28,6 +50,9 @@ class StreamlitApp:
                 st.subheader(f"Question: {item['question']}")
                 st.markdown(f"**Expected Answer:** {item['expected_answer']}")
                 st.markdown(f"**LLM Answer:** {item['llm_answer']}")
+                st.markdown(f"**Groundedness:** {item['Groundedness']}")
+                st.markdown(f"**Answer Relevance:** {item['Answer Relevance']}")
+                st.markdown(f"**Context Relevance:** {item['Context Relevance']}")
                 st.markdown(f"**Grading Result:** {item['grading_result']}")
                 st.markdown("---")
         elif page == "Table View":
